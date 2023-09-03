@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!------------------ GOOGLE FONTS ------------------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!------------------- STYLES SHEET ------------------------------------>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search">
+      <input class="city-name" type="text" placeholder="enter city name">
+      <button class="search-button"><img class="search-icon" src="images/search.png" alt=""></button>
+    </div>
+    <div class="error-message">
+        invalid-city-name
+      </div>
+    <div class="weather-open">
+      <div class="weather-details">
+        <img class="weather-image" src="images/clouds.png" alt="">
+        <h1 class="temperature">1&#8451; </h1>
+        <p class="city">Berlin</p>
+      </div>
+      <div class="weather-stats">
+        <div class="weather-stats-1">
+          <div><img class="stats-image" src="images/humidity.png" alt=""></div>
+          <div class="column-flex">
+            <p class="humidity">90%</p>
+            <span>Humidity</span>
+          </div>
+        </div>
+        <div class="weather-stats-2">
+          <div><img class="stats-image" src="images/wind.png" alt=""></div>
+          <div class="column-flex">
+            <p class="wind">2.68 km/h</p>
+            <span>Wind Speed</span>
+          </div>
+      </div>
+    </div>
+    </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
