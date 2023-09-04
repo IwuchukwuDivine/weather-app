@@ -6,7 +6,7 @@ const apiKey = "b57187c883c53425843dea1139bb6fe5";
 let apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
 
 async function checkWeather(cityName) {
-  const response = await fetch(apiUrl + `q=${cityName}` + `&appid=${apiKey}`);
+  const response = await fetch(apiUrl + `q=${cityName}` + `&appid=${apiKey}` + '&units=metric');
 
   if (response.status == 404) {
     document.querySelector('.error-message').style.display = 'initial';
